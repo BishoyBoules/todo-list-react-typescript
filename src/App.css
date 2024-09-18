@@ -1,0 +1,104 @@
+.app {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.list-page, .add-page {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.add-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.add-button:hover {
+  background-color: rgb(59, 65, 231);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #888;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.content:nth-child(2){
+  margin-right: 0;
+}
+
+.todo-item.completed {
+  color: #888;
+}
+
+.todo-text {
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.todo-text.collapsed {
+  white-space: nowrap;
+}
+
+.todo-text.expanded {
+  white-space: normal;
+}
+
+.todo-item .completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: rgb(59, 65, 231);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+button[type="submit"] {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
